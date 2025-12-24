@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/AddPriorityFragment"
+    tools:context=".add_priority">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:padding="24dp"
+        tools:context=".ui.main.MainActivity">
+        <TextView
+            android:layout_width="wrap_content"
+            style="@style/Text.H1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:paddingBottom="12dp"
+            android:layout_height="wrap_content"
+            android:text="New priority"/>
+
+
+        <EditText
+            android:id="@+id/priorityTitle"
+            style="@style/Text.BodyLarge"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_edittext"
+            android:hint="title"
+            android:inputType="text"
+            android:padding="10dp" />
+
+
+
+
+        <EditText
+            android:id="@+id/priorityAmount"
+            style="@style/Text.BodyLarge"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_edittext"
+            android:gravity="start"
+            android:hint="amount"
+            android:inputType="number"
+            android:padding="10dp" />
+
+
+        <EditText
+            android:id="@+id/priorityDescription"
+            style="@style/Text.BodyLarge"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_edittext"
+            android:gravity="start"
+            android:hint="description"
+            android:inputType="textImeMultiLine|textCapSentences"
+            android:padding="10dp" />
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/doneButtonPriority"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/button1"
+                android:backgroundTint="@null"
+                app:backgroundTint="@null"
+                android:text="Done"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:id="@+id/cancelButtonPriority"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/button2"
+                android:backgroundTint="@null"
+                app:backgroundTint="@null"
+                android:textColor="@color/dark_blue"
+                android:text="Cancel"
+                android:layout_marginStart="8dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
